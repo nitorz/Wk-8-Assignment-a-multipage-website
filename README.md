@@ -81,7 +81,7 @@ LearnForAll-Website/
 4. Test all links and functionality
 
 ## Live Demo
-[Insert your deployed website URL here]
+[(https://nitorz.github.io/Wk-8-Assignment-a-multipage-website/)]
 
 ## Assignment Requirements Met
 ✅ Three-page website (Home, About, Contact)
@@ -102,4 +102,5 @@ LearnForAll-Website/
 For questions about this project, please use the contact form on the website.
 
 ---
+
 © 2024 LearnForAll. Committed to digital accessibility and inclusive education.
