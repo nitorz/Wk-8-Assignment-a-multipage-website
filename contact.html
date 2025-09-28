@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LearnForAll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h1>LearnForAll</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Connect With Us</h1>
+            <p>Join our mission to make education accessible for everyone. We're here to support learners, educators, and advocates.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email Support</h3>
+                                <p>support@learnforall.org</p>
+                                <p>accessibility@learnforall.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Phone Support</h3>
+                                <p>+254 708861700</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Headquarters</h3>
+                                <p>yaya center</p>
+                                <p>Nairobi ,Kenya</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support Hours -->
+                    <div class="support-hours">
+                        <h3>❤️ Support Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 8:00 PM PST</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 6:00 PM PST</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>12:00 PM - 5:00 PM PST</span>
+                            </div>
+                        </div>
+                        <div class="emergency-notice">
+                            <p>24/7 emergency accessibility support available</p>
+                        </div>
+                    </div>
+
+                    <!-- Accessibility Notice -->
+                    <div class="accessibility-notice">
+                        <div class="notice-icon">♿</div>
+                        <div class="notice-content">
+                            <h4>Accessibility Support</h4>
+                            <p>Need help with accessibility features? Our dedicated accessibility team is here to assist you with any questions or technical support.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    
+                    <!-- Success/Error Messages -->
+                    <div id="form-messages" class="form-messages hidden"></div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role">I am a... *</label>
+                            <select id="role" name="role" required>
+                                <option value="">Select your role</option>
+                                <option value="student">Student with disabilities</option>
+                                <option value="educator">Educator/Teacher</option>
+                                <option value="parent">Parent/Guardian</option>
+                                <option value="administrator">School Administrator</option>
+                                <option value="advocate">Disability Advocate</option>
+                                <option value="researcher">Researcher/Academic</option>
+                                <option value="developer">Developer/Tech Professional</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="role-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your accessibility needs, questions, or feedback..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <span class="button-loader hidden">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>LearnForAll</h3>
+                <p>Making education accessible for everyone, everywhere</p>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 LearnForAll. All rights reserved. | Committed to digital accessibility</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
